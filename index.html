@@ -1,157 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sachin KN | DevOps Engineer</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <title>Sachin K N | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body { font-family: Arial, sans-serif; margin:40px; background:#f9f9f9; }
+    .container { max-width:900px; margin:auto; padding:20px; background:#fff; box-shadow: 0 0 10px #ccc;}
+    h1, h2 { color: #003366; }
+    .contact, .education, .projects, .skills, .hobbies{ margin-bottom:18px; }
+    table { width:100%; border-collapse: collapse; }
+    td, th { border:1px solid #ddd; padding:8px; }
+    tr:nth-child(even) {background: #f2f2f2;}
+    a { color:#2466f7; }
+  </style>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Sachin K N</h1>
-            <p class="tagline">DevOps Engineer | Cloud Specialist</p>
-        </div>
-    </header>
-
-    <nav id="navbar">
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-
-    <main class="container">
-        <section id="about" class="card">
-            <h2>About Me</h2>
-            <div class="about-content">
-                <div class="bio">
-                    <p>Passionate DevOps engineer with expertise in containerization, CI/CD pipelines, and cloud infrastructure. Currently pursuing Computer Science Engineering while building practical DevOps solutions.</p>
-                </div>
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <span>sachinkn92@gmail.com</span>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <span>7676038971</span>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <span>Hassan, Karnataka</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="projects" class="card">
-    <h2>DevOps Projects</h2>
-    
-    <!-- Node.js API Project -->
-    <div class="project">
-        <h3>Node.js API with CI/CD Pipeline</h3>
-        <div class="tech-stack">
-            <span class="tech-item">Docker</span>
-            <span class="tech-item">GitHub Actions</span>
-            <span class="tech-item">AWS</span>
-            <span class="tech-item">Node.js</span>
-            <span class="tech-item">Jest</span>
-        </div>
-        <p>Implemented a complete CI/CD pipeline for a Node.js application with automated testing and deployment to AWS infrastructure.</p>
-        <div class="project-features">
-            <h4>Key Features:</h4>
-            <ul>
-                <li>Containerized Node.js application</li>
-                <li>Automated testing with Jest</li>
-                <li>AWS EC2 deployment</li>
-                <li>Multi-stage workflow</li>
-            </ul>
-        </div>
-        <a href="https://github.com/sachinkn92/node-api" class="project-link" target="_blank">
-            <i class="fab fa-github"></i> View on GitHub
-        </a>
-    </div>
-    
-    <!-- Docker + GitHub Pages Project -->
-    <div class="project">
-        <h3>Dockerized Static Site with GitHub Pages</h3>
-        <div class="tech-stack">
-            <span class="tech-item">Docker</span>
-            <span class="tech-item">GitHub Pages</span>
-            <span class="tech-item">GitHub Actions</span>
-            <span class="tech-item">CI/CD</span>
-        </div>
-        <p>Created an automated pipeline to deploy a static website using Docker and GitHub Pages with GitHub Actions.</p>
-        <div class="project-features">
-            <h4>Key Features:</h4>
-            <ul>
-                <li>Containerized static website</li>
-                <li>Automated deployment on git push</li>
-                <li>Zero-downtime deployments</li>
-                <li>Custom domain support</li>
-            </ul>
-        </div>
-        <a href="https://github.com/sachinkn92/docker" class="project-link" target="_blank">
-            <i class="fab fa-github"></i> View on GitHub
-        </a>
-        <a href="https://sachinkn92.github.io/docker/" class="project-link live-demo" target="_blank">
-            <i class="fas fa-external-link-alt"></i> Live Demo
-        </a>
-    </div>
-</section>
-
-        <section id="education" class="card">
-            <h2>Education</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <h3>Bachelor of Computer Science and Engineering</h3>
-                    <p class="institution">Navkis College of Engineering, VTU University</p>
-                    <p class="duration">2022 - 2026</p>
-                </div>
-                <div class="timeline-item">
-                    <h3>PUC - PCMC</h3>
-                    <p class="institution">Student's PU College</p>
-                    <p class="duration">2020 - 2022</p>
-                </div>
-                <div class="timeline-item">
-                    <h3>SSCL - KSEEB</h3>
-                    <p class="institution">Basavarajendra School</p>
-                    <p class="duration">2020</p>
-                </div>
-            </div>
-        </section>
-
-       
-
-        <section id="contact" class="card">
-            <h2>Get In Touch</h2>
-            <form id="contactForm">
-                <div class="form-group">
-                    <input type="text" id="name" placeholder="Your Name" required>
-                </div>
-                <div class="form-group">
-                    <input type="email" id="email" placeholder="Your Email" required>
-                </div>
-                <div class="form-group">
-                    <textarea id="message" placeholder="Your Message" required></textarea>
-                </div>
-                <button type="submit" class="btn">Send Message</button>
-            </form>
-        </section>
-    </main>
-
-    <footer>
-        <div class="social-links">
-            <a href="https://github.com/sachinkn92" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="https://linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-linkedin"></i></a>
-        </div>
-        <p>&copy; <span id="currentYear"></span> Sachin K N. All rights reserved.</p>
-    </footer>
-
-    <script src="js/script.js"></script>
+<div class="container">
+  <h1>Sachin K N</h1>
+  <p><strong>Location:</strong> Hemavathi Nagar, Hassan</p>
+  <p class="contact">
+    <strong>Contact:</strong> +91 7676083971<br>
+    <strong>Email:</strong> <a href="mailto:sachinkn92@gmail.com">sachinkn92@gmail.com</a><br>
+    <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/sachin-k-n-97b754278">linkedin.com/in/sachin-k-n-97b754278</a>
+  </p>
+  <h2>Summary</h2>
+  <p>Enthusiastic and detail-oriented B.E. Computer Science student with a strong interest in DevOps, Cloud Computing, and Automation. Passionate about bridging the gap between development and operations through tools like Linux, Git, Docker, Jenkins, and AWS. Solid understanding of CI/CD pipelines and version control systems. Eager to apply classroom knowledge and hands-on project experience to real-world DevOps environments. Quick learner with strong problem-solving skills, collaboration mindset, and commitment to continuous improvement and system reliability.</p>
+  <h2>Education</h2>
+  <div class="education">
+    <ul>
+      <li>Undergraduate - BE CSE, Visvesvaraya Technological University - NCEH (2022 - 2026)</li>
+      <li>Pre-University - PCMC, Student’s PU College (2020 - 2022)</li>
+      <li>SSLC - 10th, BEMS (2020)</li>
+    </ul>
+  </div>
+  <h2>Projects & Demos</h2>
+  <div class="projects">
+    <table>
+      <tr><th>Project Name</th><th>Description/Tech</th><th>GitHub</th><th>Live Demo</th></tr>
+      <tr>
+        <td>Image Steganography System</td>
+        <td>Python, Security</td>
+        <td><a href="https://github.com/sachinkn92/image-steganography-system">Repo</a></td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>Docker</td>
+        <td>DevOps, Docker</td>
+        <td><a href="https://github.com/sachinkn92/docker">Repo</a></td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>Portfolio</td>
+        <td>Web Dev, Frontend</td>
+        <td><a href="https://github.com/sachinkn92/portfolio">Repo</a></td>
+        <td>(Add demo link after publishing!)</td>
+      </tr>
+      <tr>
+        <td>DevOps Internship Project</td>
+        <td>DevOps, CI/CD</td>
+        <td><a href="https://github.com/sachinkn92/devops-internship-project">Repo</a></td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>Pics Secure</td>
+        <td>Security, Photos</td>
+        <td><a href="https://github.com/sachinkn92/pics-secure">Repo</a></td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>SmileStudio</td>
+        <td>Creativity App</td>
+        <td><a href="https://github.com/sachinkn92/smilestudio">Repo</a></td>
+        <td>-</td>
+      </tr>
+    </table>
+  </div>
+  <h2>Skills</h2>
+  <div class="skills">
+    DevOps (Docker, Jenkins, CI/CD, AWS, Linux), Python, Shell Scripting, Git, Collaboration, Quick learning, Problem-solving
+  </div>
+  <h2>Hobbies</h2>
+  <div class="hobbies">djing, suttle bat, gaming</div>
+</div>
 </body>
 </html>
