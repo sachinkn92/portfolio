@@ -1,87 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Sachin K N | Portfolio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sachin K N | Interactive Portfolio</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"/>
   <style>
-    body { font-family: Arial, sans-serif; margin:40px; background:#f9f9f9; }
-    .container { max-width:900px; margin:auto; padding:20px; background:#fff; box-shadow: 0 0 10px #ccc;}
-    h1, h2 { color: #003366; }
-    .contact, .education, .projects, .skills, .hobbies{ margin-bottom:18px; }
-    table { width:100%; border-collapse: collapse; }
-    td, th { border:1px solid #ddd; padding:8px; }
-    tr:nth-child(even) {background: #f2f2f2;}
-    a { color:#2466f7; }
+    body { background: linear-gradient(135deg,#e0f7fa,#fff); }
+    .card { transition:transform 0.3s; }
+    .card:hover { transform: scale(1.03); box-shadow:0 4px 16px #90caf9; }
+    /* Add SVG/parallax below */
   </style>
 </head>
 <body>
-<div class="container">
-  <h1>Sachin K N</h1>
-  <p><strong>Location:</strong> Hemavathi Nagar, Hassan</p>
-  <p class="contact">
-    <strong>Contact:</strong> +91 7676083971<br>
-    <strong>Email:</strong> <a href="mailto:sachinkn92@gmail.com">sachinkn92@gmail.com</a><br>
-    <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/sachin-k-n-97b754278">linkedin.com/in/sachin-k-n-97b754278</a>
-  </p>
-  <h2>Summary</h2>
-  <p>Enthusiastic and detail-oriented B.E. Computer Science student with a strong interest in DevOps, Cloud Computing, and Automation. Passionate about bridging the gap between development and operations through tools like Linux, Git, Docker, Jenkins, and AWS. Solid understanding of CI/CD pipelines and version control systems. Eager to apply classroom knowledge and hands-on project experience to real-world DevOps environments. Quick learner with strong problem-solving skills, collaboration mindset, and commitment to continuous improvement and system reliability.</p>
-  <h2>Education</h2>
-  <div class="education">
-    <ul>
-      <li>Undergraduate - BE CSE, Visvesvaraya Technological University - NCEH (2022 - 2026)</li>
-      <li>Pre-University - PCMC, Student’s PU College (2020 - 2022)</li>
-      <li>SSLC - 10th, BEMS (2020)</li>
-    </ul>
-  </div>
-  <h2>Projects & Demos</h2>
-  <div class="projects">
-    <table>
-      <tr><th>Project Name</th><th>Description/Tech</th><th>GitHub</th><th>Live Demo</th></tr>
-      <tr>
-        <td>Image Steganography System</td>
-        <td>Python, Security</td>
-        <td><a href="https://github.com/sachinkn92/image-steganography-system">Repo</a></td>
-        <td>-</td>
-      </tr>
-      <tr>
-        <td>Docker</td>
-        <td>DevOps, Docker</td>
-        <td><a href="https://github.com/sachinkn92/docker">Repo</a></td>
-        <td>-</td>
-      </tr>
-      <tr>
-        <td>Portfolio</td>
-        <td>Web Dev, Frontend</td>
-        <td><a href="https://github.com/sachinkn92/portfolio">Repo</a></td>
-        <td>(Add demo link after publishing!)</td>
-      </tr>
-      <tr>
-        <td>DevOps Internship Project</td>
-        <td>DevOps, CI/CD</td>
-        <td><a href="https://github.com/sachinkn92/devops-internship-project">Repo</a></td>
-        <td>-</td>
-      </tr>
-      <tr>
-        <td>Pics Secure</td>
-        <td>Security, Photos</td>
-        <td><a href="https://github.com/sachinkn92/pics-secure">Repo</a></td>
-        <td>-</td>
-      </tr>
-      <tr>
-        <td>SmileStudio</td>
-        <td>Creativity App</td>
-        <td><a href="https://github.com/sachinkn92/smilestudio">Repo</a></td>
-        <td>-</td>
-      </tr>
-    </table>
-  </div>
-  <h2>Skills</h2>
-  <div class="skills">
-    DevOps (Docker, Jenkins, CI/CD, AWS, Linux), Python, Shell Scripting, Git, Collaboration, Quick learning, Problem-solving
-  </div>
-  <h2>Hobbies</h2>
-  <div class="hobbies">djing, suttle bat, gaming</div>
-</div>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+    <div class="container"><a class="navbar-brand" href="#">Sachin K N</a></div>
+  </nav>
+  <section class="container py-5" data-aos="fade-down">
+    <header><h1>Hi, I'm Sachin K N</h1></header>
+    <p>DevOps, Automation, Web/Cloud | Hassan, Karnataka</p>
+    <a class="btn btn-outline-info" href="mailto:sachinkn92@gmail.com">Contact Me</a>
+    <a class="btn btn-outline-primary" href="https://www.linkedin.com/in/sachin-k-n-97b754278">LinkedIn</a>
+  </section>
+  <section class="container py-4" data-aos="fade-up">
+    <h2>Projects</h2>
+    <div class="row">
+      <!-- Example Project Card -->
+      <div class="col-md-4 my-2">
+        <div class="card p-2">
+          <img src="https://placehold.co/600x400?text=Project" class="card-img-top" alt="proj">
+          <div class="card-body">
+            <h5 class="card-title">Image Steganography System</h5>
+            <p class="card-text">Python-based image data security.</p>
+            <a href="https://github.com/sachinkn92/image-steganography-system" class="btn btn-info" target="_blank">GitHub</a>
+          </div>
+        </div>
+      </div>
+      <!-- Add more projects as needed -->
+    </div>
+  </section>
+  <!-- Add SVG section divider -->
+  <svg viewBox="0 0 1440 160"><path fill="#2196f3" fill-opacity="0.2" d="M0,160L1440,0L1440,160L0,160Z"></path></svg>
+  <section class="container py-3" data-aos="zoom-in">
+    <h2>Skills</h2>
+    <div class="progress mb-2"><div class="progress-bar bg-info" style="width:80%;">DevOps</div></div>
+    <div class="progress mb-2"><div class="progress-bar bg-primary" style="width:70%;">Python</div></div>
+    <div class="progress mb-2"><div class="progress-bar bg-success" style="width:60%;">Docker</div></div>
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>AOS.init();</script>
 </body>
 </html>
